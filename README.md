@@ -9,6 +9,21 @@ Many browsers already have base64 encoding/decoding functionality, but it is for
 
 Sometimes encoding/decoding binary data in the browser is useful, and that is what this module does.
 
+## How to use
+
+With browsers or [Deno](https://deno.land) do:
+```
+import { base64 } from "https://taisukef.github.io/base64-js/base64.js";
+
+const s = "base64";
+const str = base64.fromByteArray(new TextEncoder().encode(s));
+console.log(str);
+
+const s2 = new TextDecoder().decode(base64.toByteArray(str));
+console.log(s2);
+```
+
+
 ## install
 
 With [npm](https://npmjs.org) do:
