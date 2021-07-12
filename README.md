@@ -12,7 +12,7 @@ Sometimes encoding/decoding binary data in the browser is useful, and that is wh
 ## How to use
 
 With browsers or [Deno](https://deno.land) do:
-```
+```js
 import { base64 } from "https://taisukef.github.io/base64-js/base64.js";
 
 const s = "base64";
